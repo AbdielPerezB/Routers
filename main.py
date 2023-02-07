@@ -1,7 +1,7 @@
 #Importamos nuestro framwork
 from fastapi import FastAPI
 #Importamos nuestros 10 routers
-from allRouters import router1, router2, router3, router4
+from allRouters import router1, router2, router3, router4, router5
 
 #Levantamos nuestra instancia de fastAPI
 app = FastAPI()
@@ -11,6 +11,7 @@ app.include_router(router1.routerAutos)
 app.include_router(router2.routerUsuario)
 app.include_router(router3.routerAnimals)
 app.include_router(router4.routerStudents)
+app.include_router(router5.routerTrees)
 
 
 #Hcaemos un path del main (opcional)
